@@ -25,6 +25,55 @@ function scrollFunction() {
 }
 
 
+// ==========================channelcontrol===============
+
+class Channel {
+    static n = -1;
+}
+
+function changechannel(){
+    setTimeout(function(){
+    var channels;
+
+    channels = document.querySelectorAll(".tv_channel");
+
+
+
+    console.log("%i", Channel.n);
+    if(Channel.n == 0)
+    {
+        channels[Channel.n].classList.toggle("displayNone");
+    }
+    if (Channel.n > 0 && Channel.n < 8)
+    {
+        channels[Channel.n -1].classList.toggle("displayNone");
+        channels[Channel.n].classList.toggle("displayNone");
+    }
+    if (Channel.n >= 8 )
+    {
+        channels[7].classList.toggle("displayNone");
+        Channel.n = -1;
+
+
+    }
+    Channel.n++;
+
+
+
+
+
+
+        // }, 3000);
+
+
+
+
+
+}, 1000);
+
+}
+
+
 
 function searchList() {
     var input, filter, ul, li, a, i, txtValue;

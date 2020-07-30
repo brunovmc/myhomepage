@@ -9,7 +9,7 @@
 
 
 .displayNone{
-  display: none;
+  display: none!important;
 }
 
 .transparent{
@@ -74,7 +74,7 @@ body{
 }
 
 #navbar{
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     position: fixed;
     display: flex;
@@ -87,7 +87,7 @@ body{
     position: absolute;
     transform: scale(1);
     flex:grid;
-	left: 2%;
+	left: 3%;
 }
 
 #header{
@@ -102,8 +102,7 @@ body{
 }
 
 #netflix{
-	width: 100%;
-    height: 100%;
+
     position: absolute;
     transform: scale(0.7);
     top: 30%;
@@ -117,11 +116,10 @@ body{
 }
 
 #github{
-	width: 100%;
-    height: 100%;
     position: absolute;
     transform: scale(0.5);
-    top: 40%;
+	top: 32%;
+	right: 42%;
     flex:grid;
 
 }
@@ -133,16 +131,17 @@ body{
 
 #tv_set{
 	position: fixed;
-	left: 59%;
-	top: 1%;
-	z-index: -10;
-	background-image: url(https://b1.pngbarn.com/png/956/803/vintage-tv-gray-crt-tv-png-clip-art-thumbnail.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 500px;
-	width: 800px;
-
+    /* left: 71%; */
+    left: 61%;
+    top: -13%;
+    z-index: -10;
+    background-image: url(https://b1.pngbarn.com/png/956/803/vintage-tv-gray-crt-tv-png-clip-art-thumbnail.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 753px;
+    transform: scale(0.5);
 }
 
 
@@ -161,7 +160,7 @@ body{
 #tv_screen_holder{
 	height: 400px;
 	width: 510px;
-	left: 8.5%;
+	left: 7.5%;
 	top:-18%;
 	position: relative;
 }
@@ -173,7 +172,20 @@ body{
 	border-radius: 50% / 5%;
 	margin: 20px 0;
 	background-color: grey;
-	background-image: url(https://33.media.tumblr.com/a3c0727bc8ddf69cc525fdf98b559ae9/tumblr_nluntn084o1r07rtgo1_500.gif);
+	/* background-image: url(https://33.media.tumblr.com/a3c0727bc8ddf69cc525fdf98b559ae9/tumblr_nluntn084o1r07rtgo1_500.gif); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	z-index: 10;
+}
+
+.tv_channel{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	border-radius: 50% / 5%;
+	background-color: grey;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -185,22 +197,7 @@ body{
 
 
 
-.tv_frame{
-	position: fixed;
-	transform: scale(2.5);
-}
 
-
-
-
-.tvpowerbtn{
-	width:5px;
-	height: 5px;
-	border-radius: 50%;
-	position: absolute;
-	background-color: green;
-	left: 89.1%;
-}
 
 .content{
 
